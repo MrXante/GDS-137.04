@@ -19,9 +19,14 @@ function animate() {
     context.clearRect(0, 0, canvas.width, canvas.height);
     player.move();
     //----loop screen-----------------------------
-    if (player.x > canvas.width + player.width/2)
+    if (player.x > canvas.width - player.width/2)
         {
-        player.x = -player.width/2;
+        player.vx = -player.vx;
+        
+        }
+    if (player.x < player.width/2)
+        {
+        player.vx = -player.vx;
         }
     //--------------------------------------------
 
