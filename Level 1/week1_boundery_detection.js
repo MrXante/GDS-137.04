@@ -9,7 +9,7 @@ context = canvas.getContext("2d");
 player = new player();
 
 //-----player speed on x and y axis-------
-player.vx = 3;
+player.vx = 2;
 player.vy = 3;
 //----------------------------------------
 
