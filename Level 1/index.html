@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
   <meta name="description" content="Level 1">
   <meta name="keywords" content="Level 1, Game Prototyping, New England Institute of Technology">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="NR">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -14,18 +14,8 @@
 <canvas id="myCanvas" width="500" height="500">
 
 </canvas>
-<script>
-    
-const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2d");
+<script src="player.js"></script>
+<script src="week1_boundery_detection.js"></script>
 
-ctx.beginPath();
-ctx.arc(250, 250, 50, 0, 360 * Math.PI/100);
-ctx.lineWidth = 2;
-ctx.stroke();
-ctx.fillStyle = "red";
-ctx.fill();
-
-</script>
 </body>
 </html>
