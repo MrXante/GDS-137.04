@@ -9,8 +9,8 @@ context = canvas.getContext("2d");
 player = new player();
 
 //-----player speed on x and y axis-------
-player.vx = 2;
-player.vy = 0;
+player.vx = 3;
+player.vy = 3;
 //----------------------------------------
 
 timer = setInterval(animate, 1000/60);
@@ -22,11 +22,18 @@ function animate() {
     if (player.x > canvas.width - player.width/2)
         {
         player.vx = -player.vx;
-        
         }
     if (player.x < player.width/2)
         {
         player.vx = -player.vx;
+        }
+    if (player.y > canvas.height - player.height/2)
+        {
+        player.vy *= -1;
+        }
+    if (player.y < player.height/2)
+        {
+        player.vy *= -1;
         }
     //--------------------------------------------
 
