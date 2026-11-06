@@ -13,7 +13,7 @@ function player()
     this.vy = 0;
 
     //player color
-    this.color = "#530BDB";
+    this.color = "#570be5";
 
     //draws player on screen
     this.draw = function()
