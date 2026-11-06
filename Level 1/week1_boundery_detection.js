@@ -22,20 +22,25 @@ function animate() {
     if (player.x > canvas.width - player.width/2)
         {
         player.vx = -player.vx;
+         player.color = "#"+Math.floor(Math.random()*16777215).toString(16);
         }
     if (player.x < player.width/2)
         {
         player.vx = -player.vx;
+        player.color = "#"+Math.floor(Math.random()*16777215).toString(16);
         }
     if (player.y > canvas.height - player.height/2)
         {
         player.vy *= -1;
+        player.color = "#"+Math.floor(Math.random()*16777215).toString(16);
         }
     if (player.y < player.height/2)
         {
         player.vy *= -1;
+        player.color = "#"+Math.floor(Math.random()*16777215).toString(16);
         }
     //--------------------------------------------
-
     player.draw();
+
 }
+
