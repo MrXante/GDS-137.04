@@ -16,7 +16,7 @@ function player()
     this.color = "#570be5";
 
     //draws player on screen
-    this.draw = function()
+    this.drawCircle = function()
     {
         context.save();
             context.beginPath();
@@ -34,4 +34,6 @@ function player()
         this.y += this.vy;
     }
 
-}
+   
+
+}0
